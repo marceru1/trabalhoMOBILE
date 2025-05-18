@@ -1,0 +1,24 @@
+<ion-content>
+  <ion-list>
+
+    <ion-item>
+      <ion-label>Digite seu Nome</ion-label>
+      <ion-input [(ngModel)] = "formData.nome" ></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label>Digite seu Cpf</ion-label>
+      <ion-input [(ngModel)] = "formData.cpf"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Digite uma senha</ion-label>
+      <ion-input [(ngModel)] = "formData.senha"></ion-input>
+    </ion-item>
+
+  </ion-list>
+  <ion-button expand="full" (click) ="criarConta()" >Criar Conta</ion-button>
+  <p (click)="goToLogin()">Ja possuo conta</p>
+
+</ion-content>
+
